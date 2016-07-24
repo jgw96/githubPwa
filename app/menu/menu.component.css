@@ -1,0 +1,52 @@
+#menu {
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: -84%;
+    will-change: transform;
+    background-color: white;
+    transition: 0.5s;
+    z-index: 9999;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+#menuContent {
+    margin-left: 4rem;
+}
+
+#menuButton {
+    color: white;
+    z-index: 8889;
+    position: fixed;
+    top: 0.7rem;
+    right: 16px;
+}
+
+#menuItem {
+    display: block;
+}
+
+.backdrop {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1b1b1b;
+    z-index:9998;
+    opacity: 0;
+    will-change: opacity;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.doBackdrop {
+    opacity: 0.7;
+    pointer-events: auto;
+}
+
+.open {
+    transform: translate3d(84%, 0, 0);
+    overflow: hidden;
+}
