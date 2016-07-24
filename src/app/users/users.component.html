@@ -1,0 +1,11 @@
+<main>
+  <input type="text" placeholder="Name" [value]="searchTerm" [ngFormControl]="searchTermControl">
+  <ul>
+    <li class="card" (click)="open(user.html_url)" *ngFor="let user of users">
+      <div class="cardContent">
+        <img [src]="user.avatar_url">
+        <h3>{{user.login}}</h3>
+      </div>
+    </li>
+  </ul>
+</main>

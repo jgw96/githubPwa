@@ -1,0 +1,13 @@
+.navbar {
+  margin-bottom: 0;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 0;
+  background: #1772BB;
+  z-index: 8888;
+}
+
+.navbar-brand {
+    color: white;
+}
