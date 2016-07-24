@@ -1,0 +1,13 @@
+<main>
+  <input type="text" placeholder="javascript" [value]="searchTerm" [ngFormControl]="searchTermControl">
+  <ul>
+    <li (click)="open(repo.html_url)" class="card" *ngFor="let repo of repos">
+      <h3>{{repo.name}}</h3>
+      <div class="card-content">
+        <p>Author: {{repo.owner.login}}</p>
+        <p>Created: {{repo.created_at.substring(0, 10)}}</p>
+        <p id="stars">Stars: {{repo.stargazers_count}}</p>
+      </div>
+    </li>
+  </ul>
+</main>

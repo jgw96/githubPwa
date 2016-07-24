@@ -1,0 +1,9 @@
+<button id="menuButton" (click)="toggle()">Menu</button>
+<div [ngClass]="{doBackdrop: openMenu}" (click)="toggle()" class="backdrop"></div>
+<div [ngClass]="{open: openMenu}" id="menu">
+  <div id="menuContent">
+    <h3>Menu</h3>
+    <a id="menuItem" (click)="toggle()" routerLink="/">Repos</a>
+    <a id="menuItem" (click)="toggle()" routerLink="/users">Users</a>
+  </div>
+</div>
