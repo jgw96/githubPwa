@@ -3,7 +3,7 @@
     width: 85%;
     position: absolute;
     top: 0;
-    left: -84%;
+    left: -86%;
     will-change: transform;
     background-color: white;
     transition: 0.5s;
@@ -47,6 +47,6 @@
 }
 
 .open {
-    transform: translate3d(84%, 0, 0);
+    transform: translate3d(86%, 0, 0);
     overflow: hidden;
 }
