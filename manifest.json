@@ -1,0 +1,8 @@
+{
+    "name": "GitSearch",
+    "short_name": "GitSearch",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#1772BB",
+    "theme_color": "#1772BB"
+}
